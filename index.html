@@ -1,63 +1,69 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Vaibhavi Kumbhare | Portfolio</title>
-<link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Vaibhavi Portfolio</title>
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="style.css">
+
+  <!-- AOS Animation -->
+  <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet">
 </head>
+
 <body>
 
+<!-- NAVBAR -->
 <nav>
-    <h2>Vaibhavi</h2>
-    <div>
-        <a href="#about">About</a>
-        <a href="#projects">Projects</a>
-        <a href="#skills">Skills</a>
-        <a href="#contact">Contact</a>
-    </div>
+  <h2>Vaibhavi</h2>
+  <div>
+    <a href="#about">About</a>
+    <a href="#projects">Projects</a>
+    <a href="#contact">Contact</a>
+  </div>
 </nav>
 
+<!-- HERO -->
 <section class="hero">
-    <h1>Hi, I'm <span>Vaibhavi</span></h1>
-    <h2 class="typing"></h2>
-    <p>Building modern web & AI-based solutions</p>
-    <a href="#projects" class="btn">View Projects</a>
+  <h1>Hello, I'm <span id="typing"></span></h1>
+  <p>Web Developer | IT Student</p>
+  <a href="#projects" class="btn">View My Work</a>
 </section>
 
-<section id="about" class="fade">
-    <h2>About Me</h2>
-    <p>I am an IT student passionate about Web Development, AI, and Data Analysis.</p>
+<!-- ABOUT -->
+<section id="about" data-aos="fade-up">
+  <h2>About Me</h2>
+  <p>I am an IT student passionate about Web Development and AI projects.</p>
 </section>
 
-<section id="projects" class="fade">
-    <h2>Projects</h2>
-    <div class="cards">
-        <div class="card"><h3>Maths Formula App</h3></div>
-        <div class="card"><h3>Helping Hands</h3></div>
-        <div class="card"><h3>Zomato EDA</h3></div>
-    </div>
+<!-- PROJECTS -->
+<section id="projects">
+  <h2 data-aos="fade-up">My Projects</h2>
+
+  <div class="card" data-aos="zoom-in">
+    <h3>Oral Cancer Detection</h3>
+    <p>AI-based detection using Teachable Machine with live camera.</p>
+  </div>
+
+  <div class="card" data-aos="zoom-in">
+    <h3>Helping Hands for Orphanage</h3>
+    <p>Web platform connecting donors and orphanages.</p>
+  </div>
+
 </section>
 
-<section id="skills" class="fade">
-    <h2>Skills</h2>
-    <div class="skills">
-        <span>C</span><span>C++</span><span>Java</span>
-        <span>Python</span><span>SQL</span>
-        <span>JavaScript</span><span>HTML</span><span>CSS</span>
-    </div>
+<!-- CONTACT -->
+<section id="contact" data-aos="fade-up">
+  <h2>Contact</h2>
+  <p>Email: yourmail@gmail.com</p>
 </section>
 
-<section id="contact" class="fade">
-    <h2>Contact</h2>
-    <p>Email: vaibhavik2006@gmail.com</p>
-    <p>Phone: +91 8208450800</p>
-</section>
-
-<footer>
-    <p id="year"></p>
-</footer>
-
+<!-- JS -->
 <script src="script.js"></script>
+
+<!-- AOS Script -->
+<script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+
 </body>
 </html>
