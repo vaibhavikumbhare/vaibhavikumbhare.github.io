@@ -1,132 +1,154 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Vaibhavi Kumbhare | Portfolio</title>
-
-  <link rel="stylesheet" href="style.css">
-
-  <!-- Google Font -->
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
-
-  <!-- AOS Animation -->
-  <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vaibhavi Kumbhare | Portfolio</title>
+    <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
 
-<!-- NAVBAR -->
-<nav>
-  <h2>Vaibhavi</h2>
-  <div>
-    <a href="#about">About</a>
-    <a href="#skills">Skills</a>
-    <a href="#projects">Projects</a>
-    <a href="#experience">Experience</a>
-    <a href="#education">Education</a>
-    <a href="#contact">Contact</a>
-  </div>
-</nav>
+<header>
+    <h1>Vaibhavi Kumbhare</h1>
+    <button id="darkToggle">🌙</button>
+    <nav>
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#projects">Projects</a>
+        <a href="#certifications">Certificates</a>
+        <a href="#contact">Contact</a>
+    </nav>
+</header>
 
-<!-- HERO -->
-<section class="hero">
-  <h1>Hello, I'm <span id="typing"></span></h1>
-  <p>BTech IT Student | Web Developer | AI Enthusiast</p>
-  <a href="#projects" class="btn">View My Work</a>
+<!-- HOME -->
+<section id="home">
+    <div class="home-content">
+        <img src="assets/images/profile.jpg" alt="profile">
+        <div>
+            <h2>Hello, I'm Vaibhavi 👩‍💻</h2>
+            <p>IT Student | Developer | AI Enthusiast</p>
+            <p>Passionate about building impactful tech solutions.</p>
+        </div>
+    </div>
 </section>
 
 <!-- ABOUT -->
-<section id="about" data-aos="fade-up">
-  <h2>About Me</h2>
-  <p>
-    I am a BTech IT student with a strong interest in Web Development and Artificial Intelligence.
-    I have hands-on experience in building real-world projects and creating responsive websites.
-    I am passionate about solving problems and continuously improving my technical skills.
-  </p>
+<section id="about">
+    <h2>About Me</h2>
+    <p>
+        I am an IT student currently pursuing Diploma at Shri Siddheshwar Women’s Polytechnic 
+        and will continue BTech at MIT Vishwaprayag University.
+    </p>
+    <p>
+        I am passionate about AI, web development, and solving real-world problems using technology.
+    </p>
 </section>
 
 <!-- SKILLS -->
-<section id="skills" data-aos="fade-up">
-  <h2>Technical Skills</h2>
-  <div class="grid">
-    <div class="card">HTML</div>
-    <div class="card">CSS</div>
-    <div class="card">JavaScript</div>
-    <div class="card">PHP</div>
-    <div class="card">MySQL</div>
-    <div class="card">Python</div>
-    <div class="card">Git & GitHub</div>
-    <div class="card">Responsive Design</div>
-  </div>
+<section id="skills">
+    <h2>Technical Skills</h2>
+    <div class="card-container">
+
+        <div class="card">
+            <h3>Languages</h3>
+            <p>C, C++, Java, Python, SQL, JavaScript</p>
+        </div>
+
+        <div class="card">
+            <h3>Web Development</h3>
+            <p>HTML, CSS, JavaScript</p>
+        </div>
+
+        <div class="card">
+            <h3>Core Concepts</h3>
+            <p>DSA, Cloud Computing</p>
+        </div>
+
+        <div class="card">
+            <h3>Tools</h3>
+            <p>Pandas, NumPy, Matplotlib, Git, VS Code</p>
+        </div>
+
+        <div class="card">
+            <h3>App Development</h3>
+            <p>Android (Basic)</p>
+        </div>
+
+    </div>
 </section>
 
 <!-- PROJECTS -->
 <section id="projects">
-  <h2 data-aos="fade-up">Projects</h2>
+    <h2>Projects</h2>
+    <div class="card-container">
 
-  <div class="grid">
+        <div class="card">
+            <h3>Maths Formula App</h3>
+            <p>Android app for quick access to math formulas with simple UI.</p>
+        </div>
 
-    <div class="card" data-aos="zoom-in">
-      <h3>Oral Cancer Detection Website</h3>
-      <p>
-        Developed an AI-based system using Teachable Machine that detects oral cancer using live camera input.
-        Integrated real-time prediction and warning system.
-      </p>
+        <div class="card">
+            <h3>Helping Hands Website</h3>
+            <p>Platform supporting orphanages with donation & volunteer features.</p>
+        </div>
+
+        <div class="card">
+            <h3>Zomato Data Analysis</h3>
+            <p>Analyzed restaurant trends using Python and visualizations.</p>
+        </div>
+
+        <div class="card">
+            <h3>Student Mental Health Analysis</h3>
+            <p>Studied stress patterns using data analysis techniques.</p>
+        </div>
+
     </div>
-
-    <div class="card" data-aos="zoom-in">
-      <h3>Helping Hands for Orphanage</h3>
-      <p>
-        Built a web platform to connect donors with orphanages.
-        Implemented donation forms, orphanage registration, and tracking system using PHP & MySQL.
-      </p>
-    </div>
-
-  </div>
 </section>
 
-<!-- EXPERIENCE -->
-<section id="experience" data-aos="fade-up">
-  <h2>Experience</h2>
-  <div class="card">
-    <h3>Web Development Intern</h3>
-    <p><strong>Katare Informatics</strong></p>
-    <p>
-      Completed a 45-day internship where I worked on real-time web projects.
-      Gained hands-on experience in HTML, CSS, JavaScript, and responsive design.
-    </p>
-  </div>
-</section>
+<!-- CERTIFICATIONS -->
+<section id="certifications">
+    <h2>Certifications</h2>
+    <div class="card-container">
 
-<!-- EDUCATION -->
-<section id="education" data-aos="fade-up">
-  <h2>Education</h2>
-  <div class="card">
-    <p><strong>BTech (Information Technology)</strong></p>
-    <p>Currently Pursuing</p>
-  </div>
+        <div class="card">
+            <h3>Yuva AI for All (2026)</h3>
+            <p>AI Fundamentals Program</p>
+        </div>
 
-  <div class="card">
-    <p><strong>Diploma in Information Technology</strong></p>
-    <p>Completed</p>
-  </div>
+        <div class="card">
+            <h3>India AI Program (2025)</h3>
+            <p>Introduction to AI</p>
+        </div>
+
+        <div class="card">
+            <h3>Modern AI (2025)</h3>
+            <p>Basics of Artificial Intelligence</p>
+        </div>
+
+        <div class="card">
+            <h3>Cisco Linux Essentials</h3>
+            <p>Linux fundamentals</p>
+        </div>
+
+    </div>
 </section>
 
 <!-- CONTACT -->
-<section id="contact" data-aos="fade-up">
-  <h2>Contact</h2>
-  <p>Email: yourmail@gmail.com</p>
-  <p>GitHub: github.com/yourprofile</p>
+<section id="contact">
+    <h2>Contact</h2>
+    <p>📧 vaibhavik2006@gmail.com</p>
+    <p>📞 +91 8208450800</p>
+    <p>
+        <a href="#">LinkedIn</a> |
+        <a href="#">GitHub</a>
+    </p>
 </section>
 
-<!-- FOOTER -->
 <footer>
-  <p>© 2026 Vaibhavi Kumbhare | Portfolio</p>
+    <p>© 2026 Vaibhavi Kumbhare</p>
 </footer>
 
 <script src="script.js"></script>
-<script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
-
 </body>
 </html>
