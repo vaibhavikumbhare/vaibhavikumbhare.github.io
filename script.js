@@ -1,35 +1,30 @@
-document.getElementById("year").innerText =
-"© " + new Date().getFullYear() + " Vaibhavi Kumbhare";
+// Typing Effect
+const text = ["Vaibhavi 👋", "Web Developer 💻", "IT Student 🎓"];
+let count = 0;
+let index = 0;
+let currentText = "";
+let letter = "";
 
-const text = ["Developer", "AI Enthusiast", "Problem Solver"];
-let i = 0, j = 0, current = "", deleting = false;
+(function type() {
+  if (count === text.length) {
+    count = 0;
+  }
 
-function type() {
-    current = text[i];
-    if (deleting) j--; else j++;
-    document.querySelector(".typing").textContent = current.substring(0, j);
+  currentText = text[count];
+  letter = currentText.slice(0, ++index);
 
-    if (!deleting && j === current.length) {
-        deleting = true;
-        setTimeout(type, 1000);
-        return;
-    }
+  document.getElementById("typing").textContent = letter;
 
-    if (deleting && j === 0) {
-        deleting = false;
-        i = (i + 1) % text.length;
-    }
+  if (letter.length === currentText.length) {
+    count++;
+    index = 0;
+    setTimeout(type, 1000);
+  } else {
+    setTimeout(type, 100);
+  }
+})();
 
-    setTimeout(type, deleting ? 50 : 100);
-}
-type();
-
-const faders = document.querySelectorAll(".fade");
-window.addEventListener("scroll", () => {
-    faders.forEach(el => {
-        const rect = el.getBoundingClientRect();
-        if (rect.top < window.innerHeight - 100) {
-            el.classList.add("show");
-        }
-    });
+// AOS Init
+AOS.init({
+  duration: 1000
 });
