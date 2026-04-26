@@ -1,13 +1,13 @@
 // Typing Effect
-const text = ["Vaibhavi 👋", "Web Developer 💻", "AI Enthusiast 🤖"];
+const roles = ["Vaibhavi 👋", "Web Developer 💻", "AI Enthusiast 🤖"];
 let i = 0, j = 0;
 let current = "";
-let isDeleting = false;
+let deleting = false;
 
-function type() {
-  current = text[i];
+function typeEffect() {
+  current = roles[i];
 
-  if (!isDeleting) {
+  if (!deleting) {
     j++;
   } else {
     j--;
@@ -15,19 +15,21 @@ function type() {
 
   document.getElementById("typing").textContent = current.substring(0, j);
 
-  if (!isDeleting && j === current.length) {
-    isDeleting = true;
-    setTimeout(type, 1000);
-  } else if (isDeleting && j === 0) {
-    isDeleting = false;
-    i = (i + 1) % text.length;
-    setTimeout(type, 200);
+  if (!deleting && j === current.length) {
+    deleting = true;
+    setTimeout(typeEffect, 1000);
+  } else if (deleting && j === 0) {
+    deleting = false;
+    i = (i + 1) % roles.length;
+    setTimeout(typeEffect, 200);
   } else {
-    setTimeout(type, isDeleting ? 50 : 100);
+    setTimeout(typeEffect, deleting ? 50 : 100);
   }
 }
 
-type();
+typeEffect();
 
-// AOS Init
-AOS.init();
+// AOS Animation
+AOS.init({
+  duration: 1000
+});
