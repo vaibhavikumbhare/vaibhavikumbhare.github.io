@@ -1,77 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Vaibhavi Kumbhare | Portfolio</title>
+
+<style>
 body {
-    margin: 0;
-    font-family: 'Segoe UI';
-    background: #f5f7fa;
-    color: #333;
-    transition: 0.3s;
+  font-family: Arial;
+  margin: 0;
+  background: #f8fafc;
+  color: #333;
 }
 
-header {
-    background: #0f172a;
-    color: white;
-    padding: 15px;
-    text-align: center;
+/* NAVBAR */
+nav {
+  background: #0f172a;
+  padding: 15px;
+  text-align: center;
 }
 
 nav a {
-    margin: 10px;
-    color: #ddd;
-    text-decoration: none;
+  color: #e2e8f0;
+  margin: 0 15px;
+  text-decoration: none;
+  font-weight: bold;
 }
 
 nav a:hover {
-    color: #38bdf8;
+  color: #38bdf8;
 }
 
+/* HERO */
+.hero {
+  text-align: center;
+  background: linear-gradient(to right, #0ea5e9, #2563eb);
+  color: white;
+  padding: 70px 20px;
+}
+
+.hero h1 {
+  margin-bottom: 10px;
+}
+
+/* SECTIONS */
 section {
-    padding: 50px;
-    text-align: center;
+  padding: 40px;
 }
 
-.home-content {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 30px;
+/* GRID */
+.grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 15px;
 }
 
-.home-content img {
-    width: 150px;
-    border-radius: 50%;
-}
-
-.card-container {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-}
-
+/* CARD */
 .card {
-    background: white;
-    width: 250px;
-    margin: 15px;
-    padding: 20px;
-    border-radius: 12px;
-    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
-    transition: 0.3s;
+  background: white;
+  padding: 15px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  transition: 0.3s;
 }
 
 .card:hover {
-    transform: translateY(-10px);
+  transform: translateY(-5px);
 }
 
+/* HEADINGS */
+h2 {
+  color: #2563eb;
+}
+
+/* FOOTER */
 footer {
-    background: #0f172a;
-    color: white;
-    padding: 10px;
+  text-align: center;
+  background: #0f172a;
+  color: white;
+  padding: 10px;
 }
+</style>
 
-/* DARK MODE */
-.dark {
-    background: #0b1120;
-    color: white;
-}
+</head>
 
-.dark .card {
-    background: #1e293b;
-}
+<body>
+
+<!-- NAVBAR -->
+<nav>
+  <a href="#about">About</a>
+  <a href="#skills">Skills</a>
+  <a href="#projects">Projects</a>
+  <a href="#contact">Contact</a>
+</nav>
+
+<!-- HERO -->
+<section class="hero">
+  <h1>Hey, I'm Vaibhavi</h1>
+  <p>BTech IT Student | Web Developer | Data Science Learner</p>
+</section>
+
+<!-- ABOUT -->
+<section id="about">
+  <h2>About Me</h2>
+  <p>
+    Hey! I am Vaibhavi, a BTech IT student with strong interest in Web Development 
+    and Data Science. I have completed a Web Development internship and worked on 
+    real-world projects using HTML, CSS, JavaScript, and PHP.
+  </p>
+
+  <p>
+    I enjoy building simple and user-friendly websites. I am always learning new 
+    technologies and improving my skills.
+  </p>
+</section>
+
+<!-- SKILLS -->
+<section id="skills">
+  <h2>Skills</h2>
+  <div class="grid">
+    <div class="card">HTML</div>
+    <div class="card">CSS</div>
+    <div class="card">JavaScript</div>
+    <div class="card">PHP</div>
+    <div class="card">MySQL</div>
+    <div class="card">Python</div>
+  </div>
+</section>
+
+<!-- PROJECTS -->
+<section id="projects">
+  <h2>Projects</h2>
+
+  <div class="card">
+    <h3>Oral Cancer Detection</h3>
+    <p>AI-based detection system using camera.</p>
+  </div>
+
+  <div class="card">
+    <h3>Helping Hands for Orphanage</h3>
+    <p>Website connecting donors and orphanages.</p>
+  </div>
+
+  <div class="card">
+    <h3>Zomato Data Analysis</h3>
+    <p>Data analysis using Python and visualization.</p>
+  </div>
+
+</section>
+
+<!-- CONTACT -->
+<section id="contact">
+  <h2>Contact</h2>
+  <p>Email: yourmail@gmail.com</p>
+  <p>GitHub: github.com/yourprofile</p>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <p>© 2026 Vaibhavi Kumbhare</p>
+</footer>
+
+<script>
+console.log("Portfolio Loaded");
+</script>
+
+</body>
+</html>
