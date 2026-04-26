@@ -1,30 +1,33 @@
 // Typing Effect
-const text = ["Vaibhavi 👋", "Web Developer 💻", "IT Student 🎓"];
-let count = 0;
-let index = 0;
-let currentText = "";
-let letter = "";
+const text = ["Vaibhavi 👋", "Web Developer 💻", "AI Enthusiast 🤖"];
+let i = 0, j = 0;
+let current = "";
+let isDeleting = false;
 
-(function type() {
-  if (count === text.length) {
-    count = 0;
-  }
+function type() {
+  current = text[i];
 
-  currentText = text[count];
-  letter = currentText.slice(0, ++index);
-
-  document.getElementById("typing").textContent = letter;
-
-  if (letter.length === currentText.length) {
-    count++;
-    index = 0;
-    setTimeout(type, 1000);
+  if (!isDeleting) {
+    j++;
   } else {
-    setTimeout(type, 100);
+    j--;
   }
-})();
+
+  document.getElementById("typing").textContent = current.substring(0, j);
+
+  if (!isDeleting && j === current.length) {
+    isDeleting = true;
+    setTimeout(type, 1000);
+  } else if (isDeleting && j === 0) {
+    isDeleting = false;
+    i = (i + 1) % text.length;
+    setTimeout(type, 200);
+  } else {
+    setTimeout(type, isDeleting ? 50 : 100);
+  }
+}
+
+type();
 
 // AOS Init
-AOS.init({
-  duration: 1000
-});
+AOS.init();
