@@ -1,154 +1,152 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Vaibhavi Kumbhare | Portfolio</title>
-    <link rel="stylesheet" href="style.css">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Vaibhavi Kumbhare | Portfolio</title>
+
+<!-- STYLE -->
+<style>
+body {
+  font-family: Arial;
+  margin: 0;
+  background: #f4f4f4;
+}
+
+/* NAVBAR */
+nav {
+  background: #333;
+  color: white;
+  padding: 15px;
+  text-align: center;
+}
+
+nav a {
+  color: white;
+  margin: 0 10px;
+  text-decoration: none;
+}
+
+/* SECTIONS */
+section {
+  padding: 40px;
+}
+
+/* HERO */
+.hero {
+  text-align: center;
+  background: #0077cc;
+  color: white;
+  padding: 60px 20px;
+}
+
+/* CARD */
+.card {
+  background: white;
+  padding: 15px;
+  margin: 10px 0;
+  border-radius: 8px;
+}
+
+/* GRID */
+.grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 15px;
+}
+
+/* FOOTER */
+footer {
+  text-align: center;
+  background: #333;
+  color: white;
+  padding: 10px;
+}
+</style>
+
 </head>
+
 <body>
 
-<header>
-    <h1>Vaibhavi Kumbhare</h1>
-    <button id="darkToggle">🌙</button>
-    <nav>
-        <a href="#home">Home</a>
-        <a href="#about">About</a>
-        <a href="#skills">Skills</a>
-        <a href="#projects">Projects</a>
-        <a href="#certifications">Certificates</a>
-        <a href="#contact">Contact</a>
-    </nav>
-</header>
+<!-- NAVBAR -->
+<nav>
+  <a href="#about">About</a>
+  <a href="#skills">Skills</a>
+  <a href="#projects">Projects</a>
+  <a href="#contact">Contact</a>
+</nav>
 
-<!-- HOME -->
-<section id="home">
-    <div class="home-content">
-        <img src="assets/images/profile.jpg" alt="profile">
-        <div>
-            <h2>Hello, I'm Vaibhavi 👩‍💻</h2>
-            <p>IT Student | Developer | AI Enthusiast</p>
-            <p>Passionate about building impactful tech solutions.</p>
-        </div>
-    </div>
+<!-- HERO -->
+<section class="hero">
+  <h1>Hey, I'm Vaibhavi 👋</h1>
+  <p>BTech IT Student | Web Developer | Data Science Learner</p>
 </section>
 
 <!-- ABOUT -->
 <section id="about">
-    <h2>About Me</h2>
-    <p>
-        I am an IT student currently pursuing Diploma at Shri Siddheshwar Women’s Polytechnic 
-        and will continue BTech at MIT Vishwaprayag University.
-    </p>
-    <p>
-        I am passionate about AI, web development, and solving real-world problems using technology.
-    </p>
+  <h2>About Me</h2>
+  <p>
+    Hey! I am Vaibhavi, a BTech IT student with strong interest in Web Development 
+    and Data Science. I have completed a Web Development internship and worked on 
+    real-world projects using HTML, CSS, JavaScript, and PHP.
+  </p>
+
+  <p>
+    I enjoy building simple and user-friendly websites. I am always learning new 
+    technologies and improving my skills.
+  </p>
 </section>
 
 <!-- SKILLS -->
 <section id="skills">
-    <h2>Technical Skills</h2>
-    <div class="card-container">
-
-        <div class="card">
-            <h3>Languages</h3>
-            <p>C, C++, Java, Python, SQL, JavaScript</p>
-        </div>
-
-        <div class="card">
-            <h3>Web Development</h3>
-            <p>HTML, CSS, JavaScript</p>
-        </div>
-
-        <div class="card">
-            <h3>Core Concepts</h3>
-            <p>DSA, Cloud Computing</p>
-        </div>
-
-        <div class="card">
-            <h3>Tools</h3>
-            <p>Pandas, NumPy, Matplotlib, Git, VS Code</p>
-        </div>
-
-        <div class="card">
-            <h3>App Development</h3>
-            <p>Android (Basic)</p>
-        </div>
-
-    </div>
+  <h2>Skills</h2>
+  <div class="grid">
+    <div class="card">HTML</div>
+    <div class="card">CSS</div>
+    <div class="card">JavaScript</div>
+    <div class="card">PHP</div>
+    <div class="card">MySQL</div>
+    <div class="card">Python</div>
+  </div>
 </section>
 
 <!-- PROJECTS -->
 <section id="projects">
-    <h2>Projects</h2>
-    <div class="card-container">
+  <h2>Projects</h2>
 
-        <div class="card">
-            <h3>Maths Formula App</h3>
-            <p>Android app for quick access to math formulas with simple UI.</p>
-        </div>
+  <div class="card">
+    <h3>Oral Cancer Detection</h3>
+    <p>AI-based detection system using camera.</p>
+  </div>
 
-        <div class="card">
-            <h3>Helping Hands Website</h3>
-            <p>Platform supporting orphanages with donation & volunteer features.</p>
-        </div>
+  <div class="card">
+    <h3>Helping Hands for Orphanage</h3>
+    <p>Website connecting donors and orphanages.</p>
+  </div>
 
-        <div class="card">
-            <h3>Zomato Data Analysis</h3>
-            <p>Analyzed restaurant trends using Python and visualizations.</p>
-        </div>
+  <div class="card">
+    <h3>Zomato Data Analysis</h3>
+    <p>Data analysis using Python and visualization.</p>
+  </div>
 
-        <div class="card">
-            <h3>Student Mental Health Analysis</h3>
-            <p>Studied stress patterns using data analysis techniques.</p>
-        </div>
-
-    </div>
-</section>
-
-<!-- CERTIFICATIONS -->
-<section id="certifications">
-    <h2>Certifications</h2>
-    <div class="card-container">
-
-        <div class="card">
-            <h3>Yuva AI for All (2026)</h3>
-            <p>AI Fundamentals Program</p>
-        </div>
-
-        <div class="card">
-            <h3>India AI Program (2025)</h3>
-            <p>Introduction to AI</p>
-        </div>
-
-        <div class="card">
-            <h3>Modern AI (2025)</h3>
-            <p>Basics of Artificial Intelligence</p>
-        </div>
-
-        <div class="card">
-            <h3>Cisco Linux Essentials</h3>
-            <p>Linux fundamentals</p>
-        </div>
-
-    </div>
 </section>
 
 <!-- CONTACT -->
 <section id="contact">
-    <h2>Contact</h2>
-    <p>📧 vaibhavik2006@gmail.com</p>
-    <p>📞 +91 8208450800</p>
-    <p>
-        <a href="#">LinkedIn</a> |
-        <a href="#">GitHub</a>
-    </p>
+  <h2>Contact</h2>
+  <p>Email: yourmail@gmail.com</p>
+  <p>GitHub: github.com/yourprofile</p>
 </section>
 
+<!-- FOOTER -->
 <footer>
-    <p>© 2026 Vaibhavi Kumbhare</p>
+  <p>© 2026 Vaibhavi Kumbhare</p>
 </footer>
 
-<script src="script.js"></script>
+<!-- SCRIPT -->
+<script>
+console.log("Portfolio Loaded");
+</script>
+
 </body>
 </html>
