@@ -20,6 +20,10 @@ nav {
   background: rgba(0,0,0,0.4);
 }
 
+nav h2 {
+  color: #38bdf8;
+}
+
 nav a {
   color: white;
   margin-left: 20px;
@@ -52,7 +56,6 @@ nav a:hover {
   color: black;
   border-radius: 8px;
   text-decoration: none;
-  transition: 0.3s;
 }
 
 .btn:hover {
@@ -67,7 +70,7 @@ section {
 /* GRID */
 .grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
   gap: 20px;
 }
 
@@ -77,7 +80,6 @@ section {
   padding: 20px;
   border-radius: 12px;
   transition: 0.3s;
-  text-align: center;
 }
 
 .card:hover {
